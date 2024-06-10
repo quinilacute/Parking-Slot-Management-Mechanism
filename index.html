@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Lot Management System</title>
+    <link rel="stylesheet" href="park.css">
+</head>
+<body>
+    <h1>Parking Lot Management System</h1>
+    <div id="parking-lot">
+        <!-- Parking slots will be generated here by JavaScript -->
+    </div>
+    <div id="details">
+        <h2>Car Details</h2>
+        <label for="slot-number">Slot Number:</label>
+        <input type="number" id="slot-number" min="1" max="15">
+        <button onclick="bookSlot()">Book Slot</button>
+        <button onclick="freeSlot()">Free Slot</button>
+        <h3>Total Charges: <span id="total-charges">0</span> USD</h3>
+    </div>
+    <div id="booking-screen">
+        <h2>Booking Screen</h2>
+        <p>Spaces Left: <span id="spaces-left">15</span></p>
+    </div>
+    <div id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Total Amount Collected: <span id="total-collected">0</span> USD</p>
+    </div>
+    <script src="park.js"></script>
+</body>
+</html>
+
+

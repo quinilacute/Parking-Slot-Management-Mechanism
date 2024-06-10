@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+#parking-lot {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+
+.slot {
+    width: 30%;
+    height: 25px;
+    padding: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#parking-lot:hover {
+    background-color: blue;
+}
+
+.slot.small {
+    background-color: #e0f7fa;
+}
+
+.slot.large {
+    background-color: #ffcdd2;
+}
+
+.slot.booked {
+    background-color: white;
+    cursor: not-allowed;
+}
+
+.slot.overtime {
+    background-color: pink;
+}
+.slot.free {
+    background-color: purple;
+}
+
+#details {
+    margin-top: 20px;
+    background-color: rgb(57, 57, 249);
+    border: 2px solid pink;
+    width: 60%;
+    height: 105px;
+    justify-content: center;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+
+#booking-screen, #dashboard {
+    margin-top: 20px;
+    background-color: rgb(57, 57, 249);
+    border: 2px solid pink;
+    width: 60%;
+    height: 105px;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+
+
+#booking-screen :hover, #dashboard :hover, #details :hover{
+  background-color: black;
+  color: white;
+  border: blue;
+}
